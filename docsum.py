@@ -139,7 +139,7 @@ def split_document_into_chunks(text, max_size=4000):
 
 
 
-def summarize_with_chunking(text, client, max_size= 2000, delay= 5):
+def summarize_with_chunking(text, client, max_size= 4000, delay= 5):
     """
     Queries Groq_API using chunking and time delays to avoid rate limit/other errors for large documents
 
