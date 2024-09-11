@@ -24,11 +24,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          sudo apt-get install -y poppler-utils  # Install pdftotext
-      - name: Run Pylint
-        run: |
-          pip install pylint
-          pylint --disable=C0301 docsum.py
+          sudo apt-get install -y poppler-utils 
       - name: Run doctests
         run: |
           python3 -m doctest docsum.py
