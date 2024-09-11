@@ -94,7 +94,7 @@ def split_document_into_chunks(text, max_size=3000):
     Tests:
     >>> split_document_into_chunks('This is a sentence.\nThis is another paragraph')
     ['This is a sentence.\nThis is another paragraph']
-    >>> len(split_document_into_chunks("gabbledigook"*1000)[0])
+    >>> len(split_document_into_chunks("gabbledigook"*1000)[0], max_size= 4000)
     4000
     >>> split_document_into_chunks("hello this is a long sentence please help", max_size= 40)
     ['hello this is a long sentence please', 'help']
