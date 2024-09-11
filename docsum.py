@@ -79,7 +79,7 @@ def summarize_text(text, client):
 
 
 
-def split_document_into_chunks(text, max_size=4000):
+def split_document_into_chunks(text, max_size=3000):
     r'''
     Splits the input text into smaller chunks so that an LLM can process those chunks.
     Performs an initial split on newline characters, then separates out chunks less than the max size.
@@ -139,7 +139,7 @@ def split_document_into_chunks(text, max_size=4000):
 
 
 
-def summarize_with_chunking(text, client, max_size= 4000, delay= 5):
+def summarize_with_chunking(text, client, max_size= 3000, delay= 5):
     """
     Queries Groq_API using chunking and time delays to avoid rate limit/other errors for large documents
 
